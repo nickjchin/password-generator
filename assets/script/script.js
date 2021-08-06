@@ -50,10 +50,10 @@ function getUserOptions() {
   // create a conditional to check if password length is atleast 8 chars
   // create a conditional to check if pw length is lower than 128 chars
   if (passLength > 0 && passLength < 129) {
-    console.log(passLength)
+    console.log(passLength);
   } else {
-    alert('Please enter valid number between 8 and 128 characters!')
-    getUserOptions()
+    alert('Please enter valid number between 8 and 128 characters!');
+    getUserOptions();
   }
 
   // create 4 different conditional statements to store if user pass is going to use special chars, nums, lower, and upper
@@ -61,36 +61,36 @@ function getUserOptions() {
   // Special Chars
   var isSpecial = prompt('Does your password need special characters?')
   if (isSpecial.toLowerCase() == 'yes' || isSpecial.toLowerCase() == 'no') {
-    console.log('isSpecial: ' + isSpecial)
+    console.log('isSpecial: ' + isSpecial);
   } else {
-    alert('Please pick yes or no!')
-    console.log('isSpecial: ' + isSpecial)
-    getUserOptions()
+    alert('Please pick yes or no!');
+    console.log('isSpecial: ' + isSpecial);
+    getUserOptions();
   }
 
   // Num
   var isNum = prompt('Does your password need numerical characters?')
   if (isNum.toLowerCase() === 'yes' || isNum.toLowerCase() === 'no') {
-    console.log('isNum: ' + isNum)
+    console.log('isNum: ' + isNum);
   } else {
-    alert('Please pick yes or no!')
-    getUserOptions()
+    alert('Please pick yes or no!');
+    getUserOptions();
   }
   // Lower
   var isLower = prompt('Does your password need lowercase characters?')
   if (isLower.toLowerCase() === 'yes' || isLower.toLowerCase() === 'no') {
-    console.log('isLower: ' + isLower)
+    console.log('isLower: ' + isLower);
   } else {
-    alert('Please pick yes or no!')
-    getUserOptions()
+    alert('Please pick yes or no!');
+    getUserOptions();
   }
   //Upper
   var isUpper = prompt('Does your password need uppercase characters?')
   if (isUpper.toLowerCase() === 'yes' || isUpper.toLowerCase() === 'no') {
-    console.log('isUpper: ' + isUpper)
+    console.log('isUpper: ' + isUpper);
   } else {
-    alert('Please pick yes or no!')
-    getUserOptions()
+    alert('Please pick yes or no!');
+    getUserOptions();
   }
   // create a conditional statement to check if user included some type of chars (if else?)
   if (
@@ -99,8 +99,8 @@ function getUserOptions() {
     isLower === 'no' &&
     isUpper === 'no'
   ) {
-    alert('Your password can not contain no characters!')
-    getUserOptions()
+    alert('Your password can not contain no characters!');
+    getUserOptions();
   }
   // Create a var to store the user input
   // Create object to store user input
@@ -111,32 +111,35 @@ function getUserOptions() {
     isLower: isLower,
     isUpper: isUpper,
   }
-  console.log(passOptions)
-  return passOptions
+  console.log(passOptions);
+  return passOptions;
 }
 
 // function for getting a random element from an array
 // check out math.random
-function randomizer() {}
+function randomizer(x) {
+  var randEl = x[Math.floor(Math.random() * x.length)];
+  console.log('random element from array ' + randEl);
+  return randEl;
+}
 
 // function to generate a password with our user input
-//function generatePassword{
+function generatePassword(){
 // create a variable and call our function so we can use our data from the previous function.
-// var userOptions = getUserOptions();
+  var userOptions = getUserOptions();
 
 // create a var to store password
-// var results = []
+  var results = [];
 
 // array to store the types of characters to include in our password
-// var userPossibleChars[]
+  var userPossibleChars = [];
 
 // array to contain atleast one of each chosen type of characters to make sure atleast one of every char is being used (validation)
-// var guarChar = []
+  var guarChar = [];
 
 // create conditional statements that add the array of characters into an array of possible characters based on our users input
 // need to push new random characters to the guaranteed characters (look up .concat())
-
-// if(userOptions.specialChars){
+if(userOptions.specialChars){
 //take chars and concat
 // take chars and push(randomizationfunction(specialChars) (after we randomize)
 //}
@@ -152,6 +155,7 @@ function randomizer() {}
 // create another for loop to guarantee atleast one character from each possible characters in teh result
 
 // Take the result Look up join() and turn it into a string
+}
 
 // Assignment Code
 var generateBtn = document.querySelector('#generate')
