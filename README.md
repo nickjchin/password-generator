@@ -1,7 +1,5 @@
 # password-generator
 
-\*hello
-
 ## Directions
 
 1. Push generate code
