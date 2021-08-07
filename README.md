@@ -2,23 +2,10 @@
 
 \*hello
 
-## hello
+## Directions
 
-##### hello
-
-**hello**
-
-```
-Git add.
-git commit -m "Your commit message here"
-```
-
-# This is project used
-
-- Javascript
-- CSS
-- HTML
-
-1. James
-2. Manoli
-3. Adwait
+1. Push generate code
+2. Enter Paramenters (do you need special characters, numbers, etc. in your password)
+3. Code is generated using your parameters
+4. Copy paste where you need a new password
+5. Copy password so you don't forget it
