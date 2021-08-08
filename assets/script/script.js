@@ -46,7 +46,7 @@ function getUserOptions() {
   // create a conditional statement to check lenght is actual number  ie 8 eight
   // create a conditional to check if password length is atleast 8 chars
   // create a conditional to check if pw length is lower than 128 chars
-  if (passLength > 8 && passLength < 129) {
+  if (passLength > 7 && passLength < 129) {
     console.log(passLength);
   } else {
     alert("Please enter valid number between 8 and 128 characters!");
